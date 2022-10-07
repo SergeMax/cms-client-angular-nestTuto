@@ -1,0 +1,19 @@
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+
+import { HttpClientModule } from '@angular/common/http';
+import { ArticlesRoutingModule } from './articles-routing.module';
+import { ArticlesComponent } from './articles/articles.component';
+
+
+@NgModule({
+  declarations: [
+    ArticlesComponent
+  ],
+  imports: [
+    CommonModule,
+    ArticlesRoutingModule,
+    HttpClientModule
+  ]
+})
+export class ArticlesModule { }
