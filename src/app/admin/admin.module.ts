@@ -8,6 +8,7 @@ import { ArticleComponent } from './article/article.component';
 import { HomeComponent } from './home/home.component';
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,
