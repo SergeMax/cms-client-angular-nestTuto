@@ -18,4 +18,9 @@ export class ArticlesComponent implements OnInit {
     this.articles$ = this.httpClient.get<any[]>('http://localhost:3000/articles');
   }
 
+  reloadArticles(deletionSuccess: boolean){
+    console.log('deletion successful: ', deletionSuccess);
+    this.articles$= this.httpClient.get<any[]>('http://localhost:3000/articles');
+  }
+
 }

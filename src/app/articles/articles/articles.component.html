@@ -1,5 +1,7 @@
 <div *ngIf="articles$ | async">
-    <ul>
-        <li *ngFor="let article of articles$ | async">{{ article.title }}</li>
-    </ul>
+    <cms-article-summary 
+    *ngFor="let article of articles$ | async" 
+    [article] = "article"
+    (deleteSuccess)="reloadArticles($event)"
+    ></cms-article-summary> 
 </div>
